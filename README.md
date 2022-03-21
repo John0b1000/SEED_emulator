@@ -1,2 +1,2 @@
 # SEED_emulator
-SEED emulator project files
+SEED emulator demo files
