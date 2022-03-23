@@ -1,2 +1,2 @@
-# SEED_emulator
-SEED emulator demo files
+# seed_emulator
+seed emulator demo files
