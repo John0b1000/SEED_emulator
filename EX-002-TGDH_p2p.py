@@ -79,15 +79,13 @@ as150.createHost('web').joinNetwork('net0')
 #
 web.install('web150')
 
-# Create two new hosts for p2p TGDH communication exhibit
+# Create soldier1 in AS-150
 #
 soldier1 = as150.createHost('soldier1').joinNetwork('net0')
-soldier2 = as150.createHost('soldier2').joinNetwork('net0')
 
-# Add custom software to these two new nodes
+# Add custom software to soldier1 node
 #
 add_customized_software(soldier1)
-add_customized_software(soldier2)
 
 # Bind the virtual node to a physical node
 #
@@ -101,6 +99,11 @@ emu.addBinding(Binding('web150', filter = Filter(nodeName = 'web', asn = 150)))
 as151 = base.createAutonomousSystem(151)
 as151.createNetwork('net0')
 as151.createRouter('router0').joinNetwork('net0').joinNetwork('ix100')
+
+# Create soldier2 in AS-151 and add software
+#
+soldier2 = as150.createHost('soldier2').joinNetwork('net0')
+add_customized_software(soldier2)
 
 as151.createHost('web').joinNetwork('net0')
 web.install('web151')
