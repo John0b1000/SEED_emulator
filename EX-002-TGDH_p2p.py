@@ -102,7 +102,7 @@ as151.createRouter('router0').joinNetwork('net0').joinNetwork('ix100')
 
 # Create soldier2 in AS-151 and add software
 #
-soldier2 = as150.createHost('soldier2').joinNetwork('net0')
+soldier2 = as151.createHost('soldier2').joinNetwork('net0')
 add_customized_software(soldier2)
 
 as151.createHost('web').joinNetwork('net0')
