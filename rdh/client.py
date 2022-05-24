@@ -37,7 +37,31 @@ def send(message):
   msg = {'message': cipherText, 'iv': iv}
   pickleMsg = pickle.dumps(msg)
   clientSocket.send(pickleMsg)
+  
+  # print the pickleMsg for analysis
+  # this is the message sent to the server (byte stream)
+  #
+  pickleHex = pickleMsg.hex()
+  pickleList = [pickleHex[i : i + 4] for i in range(0, len(pickleHex), 4)]
+  counter = 0
+  print("\nPrinting byte stream sent to server ...\n")
+  for group in pickleList:
+    if (counter == 0):
+      print("0x0000: ", end=" ")
+      print(group, end=" ")
+      counter = counter + 2
+    else:      
+      if (counter % 16 != 0):
+        print(group, end=" ")
+        counter = counter + 2
+      else:
+        print("\n0x%s: " % (hex(counter).lstrip("0x").rjust(4,"0")), end=" ")
+        print(group, end=" ")
+        counter = counter + 2
 
+  print("\n")
+  # end print
+  
   return [key, cipherText]
 
 clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -54,3 +78,5 @@ A = pow(g, x, p)
 msg = sys.argv[2]
 [key, cipher]=send(bytearray(msg, 'utf-8'))
 print("key is: {}".format(key))
+
+#hexmsg = ":".join("{:02x}".format(ord(c)) for c in str(cipherText))
