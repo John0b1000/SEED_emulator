@@ -1,6 +1,6 @@
 # Usage on the SEED Emulator
 The following sections demonstrate how to utilize the contents of this shared folder on the SEED emulator.
-## I. Server-Client Communication (Diffie-Hellman)
+## I. Server-Client Communication (Diffie-Hellman, TCP)
 Node A (server):
 ```
 python3 server.py 
@@ -19,7 +19,7 @@ To read the file containing the captured traffic:
 ```
 ./tcp_read_tool.sh <filename>.pcap
 ```
-## III. Mulitcasting
+## III. Mulitcasting (UDP)
 Node B (receiever):
 ```
 python3 mucast_v2.py --mcast-group '224.1.1.2'
