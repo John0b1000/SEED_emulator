@@ -1,4 +1,4 @@
-# SEED Emulator Demonstration
+# SEED Emulator Demonstration (6-13-22)
 The following sections demonstrate how to utilize the contents of this shared folder on the SEED emulator. This file is a sequence of commands to be executed in order.
 ## I. Server-Client Communication (Diffie-Hellman, TCP)
 Soldier 4 (server):
