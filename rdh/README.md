@@ -37,3 +37,4 @@ Now, input messages to Node A for multicasting.
 Node A
 ```
 python3 tree_gen.py <number of nodes>
+```
