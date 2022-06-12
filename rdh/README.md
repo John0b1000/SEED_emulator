@@ -32,4 +32,8 @@ Node A (sender):
 ```
 python3 mucast_v2.py --iface='<ip addr>' --join-mcast-groups '224.1.1.2' --bind-group '224.1.1.2' --type rec
 ```
-Now, input messages to Node A for multicasting. 
+Now, input messages to Node A for multicasting.
+## IV. TGDH
+Node A
+```
+python3 tree_gen.py <number of nodes>
