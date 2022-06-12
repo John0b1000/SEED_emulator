@@ -7,9 +7,9 @@
 # A binary file containing the data is written.
 #
 
-# run the tcpdump command (sudo privilege required)
+# run the tcpdump command
 #
-sudo tcpdump -i any -c32 -w $1 port 9000
+tcpdump -i any -c32 -w $1 port 9000
 
 #
 # end of file
