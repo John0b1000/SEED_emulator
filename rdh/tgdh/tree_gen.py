@@ -6,7 +6,8 @@ import sys
 
 # determine the number of nodes
 #
-NUM_NODES = int(sys.argv[1])-1
+nodes = input("Enter the number of group members: ")
+NUM_NODES = int(nodes)-1
 
 # instantiate the Tree class
 #
