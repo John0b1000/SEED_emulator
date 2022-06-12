@@ -7,7 +7,7 @@
 # The output is displayed in hexadecimal format.
 #
 
-# run the tcpdump command (sudo privilege not required)
+# run the tcpdump command
 #
 tcpdump -qns 0 -X -r $1 | grep message -A 3 -B 5
 
