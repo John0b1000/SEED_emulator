@@ -75,7 +75,7 @@ x = getrandbits(1024)
 A = pow(g, x, p)
 
 
-msg = sys.argv[2]
+msg = input("Enter your message here: ")
 [key, cipher]=send(bytearray(msg, 'utf-8'))
 #print("key is: {}".format(key))
 
