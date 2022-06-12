@@ -8,7 +8,7 @@ cd /rdh/sc_comm
 ```
 python3 server.py 
 ```
-Router 150 (client-side router)
+Router 150 (client-side router):
 ```
 cd /rdh/sc_comm
 ```
@@ -28,7 +28,7 @@ python3 client.py 10.151.0.72
 *Run this command again to show same message with different encryption.*
 *Disconnect Router to AS 151 to show how attacks can be simulated.*
 
-Router 150 (client-side router)
+Router 150 (client-side router):
 ```
 ./tcp_read_tool.sh traffic.pcap
 ```
@@ -63,7 +63,7 @@ python3 mucast_v2.py --mcast-group '224.1.1.2'
 *Change	one of the receiving groups to show that messages will not go through.*
 
 ## III. TGDH
-Soldier 1
+Soldier 1:
 ```
 tmux
 ```
