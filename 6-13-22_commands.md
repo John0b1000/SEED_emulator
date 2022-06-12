@@ -3,21 +3,21 @@ The following sections demonstrate how to utilize the contents of this shared fo
 ## I. Server-Client Communication (Diffie-Hellman, TCP)
 Soldier 4 (server):
 ```
-cd rdh/sc_comm
+cd /rdh/sc_comm
 ```
 ```
 python3 server.py 
 ```
 Router 150 (client-side router)
 ```
-cd rdh/sc_comm
+cd /rdh/sc_comm
 ```
 ```
 ./tcp_write_tool.sh traffic.pcap
 ```
 Soldier 1 (client):
 ```
-cd rdh/sc_comm
+cd /rdh/sc_comm
 ```
 ```
 python3 client.py 10.151.0.72
@@ -34,14 +34,14 @@ Router 150 (client-side router)
 ## II. Multicasting (UDP)
 Soldier 2 (receiever):
 ```
-cd rdh/multicast
+cd /rdh/multicast
 ```
 ```
 python3 mucast_v2.py --iface='10.150.0.73' --join-mcast-groups '224.1.1.1' '224.1.1.2' '224.1.1.3' --bind-group '224.1.1.2' --type rec
 ```
 Soldier 3 (receiever):
 ```
-cd rdh/multicast
+cd /rdh/multicast
 ```
 ```
 python3 mucast_v2.py --iface='10.150.0.74' --join-mcast-groups '224.1.1.1' '224.1.1.2' '224.1.1.3' --bind-group '224.1.1.2' --type rec
