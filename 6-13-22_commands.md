@@ -59,6 +59,8 @@ python3 mucast_v2.py --mcast-group '224.1.1.2'
 ```
 >> This is a test message!
 ```
+*Change	one of the receiving groups to show that messages will not go through*
+
 ## III. TGDH
 Soldier 1
 ```
