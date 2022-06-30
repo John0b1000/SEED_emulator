@@ -34,6 +34,10 @@ Router 150 (client-side router):
 ./tcp_read_tool.sh traffic.pcap
 ```
 ## II. Multicasting (UDP)
+Router 150:
+```
+tcpdump udp -i any -X port 19900
+```
 Soldier 2 (receiever):
 ```
 cd /rdh/multicast
