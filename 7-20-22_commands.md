@@ -2,7 +2,7 @@
 
 **Run tcpdump on router 150 node**
 ```
-tcpdump -i any -w "data.pcap"  
+tcpdump -i any -w data.pcap  
 ```
 **Run the nameserver on soldier 1**
 ```
