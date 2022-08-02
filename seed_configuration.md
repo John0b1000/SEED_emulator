@@ -1,5 +1,5 @@
 # Creating a VLAN with SEED Emulator
-OS: Ubuntu 20.04
+# OS: Ubuntu 20.04
 
 
 ## Set up a VLAN on TP Link Switch
