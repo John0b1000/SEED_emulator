@@ -1,3 +1,7 @@
+#!/bin/bash
+# file: seed_install_ros.sh
+# This script installs barebones ROS on a seed emulator node.
+#
 add-apt-repository universe
 add-apt-repository multiverse
 add-apt-repository restricted
