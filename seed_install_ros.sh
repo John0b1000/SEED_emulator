@@ -14,7 +14,7 @@ apt -y install ros-noetic-ros-base
 . /opt/ros/noetic/setup.bash
 echo "echo 'ROSINSTALL'" >> ~/.bashrc
 echo ". /opt/ros/noetic/setup.bash" >> ~/.bashrc
-apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
-apt install python3-rosdep
+apt -y install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+apt -y install python3-rosdep
 rosdep init
 rosdep update
