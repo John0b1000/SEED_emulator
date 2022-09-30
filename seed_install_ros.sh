@@ -2,6 +2,7 @@
 # file: seed_install_ros.sh
 # This script installs barebones ROS on a seed emulator node.
 #
+apt -y install software-properties-common dirmngr apt-transport-https lsb-release ca-certificates
 add-apt-repository universe
 add-apt-repository multiverse
 add-apt-repository restricted
