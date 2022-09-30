@@ -12,7 +12,6 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt-key
 apt-get -y update
 apt-get -y install ros-noetic-ros-base
 . /opt/ros/noetic/setup.bash
-echo "echo 'ROSINSTALL'" >> ~/.bashrc
 echo ". /opt/ros/noetic/setup.bash" >> ~/.bashrc
 apt-get -y install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 apt-get -y install python3-rosdep
