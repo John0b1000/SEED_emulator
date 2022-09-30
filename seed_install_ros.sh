@@ -9,12 +9,12 @@ add-apt-repository restricted
 sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 apt install curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt-key add -
-apt -y update
-apt -y install ros-noetic-ros-base
+apt-get -y update
+apt-get -y install ros-noetic-ros-base
 . /opt/ros/noetic/setup.bash
 echo "echo 'ROSINSTALL'" >> ~/.bashrc
 echo ". /opt/ros/noetic/setup.bash" >> ~/.bashrc
-apt -y install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
-apt -y install python3-rosdep
+apt-get -y install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+apt-get -y install python3-rosdep
 rosdep init
 rosdep update
