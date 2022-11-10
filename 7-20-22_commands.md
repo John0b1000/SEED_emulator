@@ -4,7 +4,7 @@
 ```
 tcpdump -i any -w data.pcap  
 ```
-**Run the nameserver on soldier 1**
+**Run the nameserver on nameserver node*
 ```
 python3 run_ns.py 10.152.0.71:9090
 ```
